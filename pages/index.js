@@ -1,17 +1,15 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import { useState } from "react";
-import axios from "axios";
-import Calamar from "@/components/Calamar";
 
-const inter = Inter({ subsets: ["latin"] });
+import Calamar from "@/components/Calamar";
+import InscripcionPage from "@/components/INTECForm";
+
+
 
 export default function Home() {
   return (
-    <div>
+    <div style={{textAlign: 'center'}}>
+    <h1>Lista de Delincuentes</h1>
       <Calamar />
+      <InscripcionPage/>
     </div>
   );
 }
