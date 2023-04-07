@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 
   try {
     await connectMongoDB();
-    Detenido.create({ delincuentes }).then((data) => {
+    Detenido.create(delincuentes).then((data) => {
       console.log(data);
       res.status(201).send(data);
     });
